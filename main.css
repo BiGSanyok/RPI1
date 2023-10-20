@@ -1,0 +1,847 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(fonts/gotham_medium.otf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(fonts/gotham_book.otf);
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url(fonts/gotham_bold.otf);
+}
+
+@font-face {
+    font-family: Myriad;
+    src: url(fonts/Myriad\ Pro.ttf);
+}
+
+* {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0%;
+}
+
+.main_block {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------- header ---------------------- */
+
+header{
+    height: 115px;
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+    display: flex;
+}
+
+.Logo_box {
+    margin-left: 13px;
+    margin-top: 9px;
+}
+
+#logo {
+    height: 75px;
+    width: 79px;
+}
+
+.navigation{
+    display: flex;
+    width: 700px;
+    margin-right: 20px;
+}
+
+.navigation-button{
+    padding: 25px;
+    font-family: Myriad;
+    font-size: 13pt;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 85px;
+}
+
+.navigation-button:first-of-type{
+    margin-left: -5px;
+}
+
+.button {
+    margin-top: 16px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navigation-button:hover{
+    border-bottom: 6px solid #11749e;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+    justify-content: space-between;
+}
+
+.social_icon {
+    display: flex;
+    height: 100%;
+    width: 40px;
+}
+
+.social_icon:hover {
+    cursor: pointer;
+}
+
+.icon {
+    margin: 10px 0 0 11px;
+    align-self: center;     
+}
+
+/*---------------------- first_screen ----------------------*/
+
+
+.main-block{
+    width: 100%;
+    height: 880px;
+    z-index: 100;
+    position:relative;
+}
+
+.social{
+    display: flex;
+    align-content: center;
+}
+
+.social i{
+    color: aliceblue;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.circle{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: #2e85aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.circle-scroll-suptitle {
+    margin-top: 26px;   
+    transform: scale(0.99,1);
+    font-size: 13.5px; 
+    margin-right: 2px;
+}
+
+#first-screen{
+    background-image: url("images/first_screen.jpg");
+    background-size:cover;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+#first-screen b{
+    font-family: GothamMedium;
+    height: min-content;
+}
+
+#first-screen b:first-child{
+    color: #f5f5f5;
+    font-size: 109pt;
+    margin-top: 356px;
+    letter-spacing: .1px;
+    transform: scale(0.97, 1);
+    margin-right: 379px;
+}
+
+
+#first-screen b:last-of-type{
+    color: #11749e;
+    font-size: 18pt;
+    letter-spacing: 19px;
+    margin-left: 391px;
+}
+
+.second-screen{
+    width: 100%;
+    height: 738px;
+    background: #11749e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#W{
+    top: 926px;
+    left: 750px;
+    transform: scale(1.03, 1);
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;;
+    font-size: 186pt;
+    color: #ffffff;
+    opacity: .15;
+    z-index: 100;
+    height: min-content;
+}
+
+#Agency{
+    position: absolute;
+    top: 1043px;
+    left: 532px;
+    letter-spacing: .4px;
+    font-family: GothamMedium;
+    z-index: 200;
+    font-size: 37px;
+    color: white;
+    height: min-content;
+}
+
+.half-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;  
+}
+
+.half-screen:first-of-type{
+    height: 300px;
+}
+
+.half-screen:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 44px;
+    height: 438px;
+}
+
+#information{
+    display: flex;
+    justify-content: center;
+}
+
+.information-block{
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 30px; */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.information-block h4{
+    font-family: GothamBook;
+    color: white;
+    font-size: 12.5pt;
+}
+
+.information-block p{
+    font-family: GothamBook;
+    color: white;
+    font-size: 9pt;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 24px;
+    font-size: 15px;
+    width: 270px;
+}
+
+.feature-subtitle {
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+#logo{
+    margin: 15px 200px;
+}
+
+#scroll{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 85px;
+    margin-bottom: 100px;
+}
+#scroll p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#scroll:hover{
+    cursor: pointer;
+}
+
+#circle-scroll{
+    margin-top: 19px;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* news screen ///////////////////////*/
+
+.news_block {
+    width: 100%;
+    height: 921px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    line-height: 24px;
+}
+
+.news_box {
+    width: 50%;
+}
+
+.news_box:first-child {
+    background-color: #222222;
+    color: #ffffff;
+    height: 447px;
+}
+
+.news_box:last-child {
+    background-color: #f3f3f3;
+    color: #222222;
+    height: 474px;
+}
+
+#first_news_text {
+    max-width: 474px;
+    width: 100%;
+    margin: 75px 119px 0 214px;
+}
+
+#second_news_text {
+    max-width: 474px;
+    width: 100%;
+    margin: 99px 118px 0 78px;
+}
+
+.news_first_paragraph {
+    font-family: GothamBook;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    letter-spacing: .3px;
+}
+
+.title {
+    font-family: GothamMedium;
+    font-size: 24.3px;
+    margin-bottom: 34px;
+    margin-left: 3px;
+    font-weight: 100;
+    letter-spacing: .5px;
+}
+
+.news_second_paragraph {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-family: GothamBook;
+    font-size: 15px;
+}
+
+#first_box {
+    background-image: url(images/third_block_ru.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 447px;
+}
+
+#second_box {
+    background-image: url(images/third_block_ld.jpg);
+    width: 50%;
+    height: 474px;
+}
+
+/*---------------------- column screen basis ----------------------*/
+
+.column_block {
+    margin: 0;
+
+    background-color: #ffffff;
+    width: 100%;
+    height: 1017px;
+    /* z-index: 0; */
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+
+.column_heading {
+    margin: 8px auto;
+    padding: 15px 0px 0px 10px;
+    width: 790px;
+    height: 334px;
+    position: relative;
+}
+
+.column_background {
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: 335px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 248px;
+    opacity: .12;
+    font-weight: 700;
+}
+
+.column_title {
+    position: absolute;
+    z-index: 100;
+    top: 148px;
+    left: 292px;
+    text-transform: uppercase;
+    font-family: GothamMedium;
+    font-size: 36px;
+    font-weight: 10;
+    letter-spacing: .8px;
+}
+
+.column_subtitle {
+    margin: 277px auto 0;
+    font-family: GothamBook;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.columns_box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 53px auto 0;
+    max-width: 1170px;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 607px;
+    z-index: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    font-family: GothamBook;
+    font-size: 12.6px;
+    max-width: 270px;
+    margin: 0;
+    /* width: 270px; */
+}
+
+.column_text.title {
+    font-family: GothamMedium;
+    margin: 0;
+    color: #11749e;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 38px;
+    letter-spacing: 0.001px;
+    /* word-spacing: 0.0001px; */
+    
+    /* width: 270px; */
+
+}
+
+.column_text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 0.001px;
+    line-height: 24px;
+}
+
+.column_text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 0.001px;
+    line-height: 24px;
+}
+
+
+/* ---------------------- blog screen  ---------------------- */
+
+.column_block.blog {
+    height: 1010px;
+}
+
+
+
+
+
+/*---------quick_screen--------*/
+.quick_screen {
+    background-image: url(images/quick_action_screen.jpg);
+    width: 100%;
+    height: 355px;
+}
+
+.quick_container {
+    padding-left: 156px;
+    padding-top: 113px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.quick_item {
+    width: 558px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 63px;
+}
+
+.quick_item:last-of-type {
+margin-left: -150px;
+}
+
+.quick_text {
+    font-family: GothamBook;
+    font-size: 15px;
+    color: #f5f5f5;
+    letter-spacing: .01px;
+    margin-top: -6px;
+    /* word-spacing: 1px; */
+    line-height: 24px;
+    margin-left: 31px;
+}
+
+/*-------features_screen-------*/
+
+.features_screen {
+    background: url(images/features_screen.jpg);
+    width: 100%;
+    height: 849px;
+}
+
+.features_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 442px;
+    margin-left: 225px;
+}
+
+.feature_box {
+    height: 38px;
+    margin-left: 0;
+    margin-bottom: 26px;
+    background-color: #11749e;     
+}
+
+.feature_box p {
+    padding-left: 19px;
+    padding-bottom: 14px;
+    padding-top: 11px;
+    font-family: GothamMedium;
+    font-size: 13.6px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+}
+
+.feature_box.first {
+    width: 370px;
+}
+
+.feature_box.second {
+    width: 400px;
+}
+
+.feature_box.third {
+    width: 428px;
+}
+
+.features_phone {
+    margin-left: -32px;
+    margin-top: 98px;
+    width: 317px;
+    height: 651px;
+}
+
+.feature_text {
+    position: absolute;
+    top: 3905px;
+    z-index: 0;
+    width: 709px;
+}
+
+.features_column_text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;  
+    margin-left: 228px;
+    font-family: GothamBook;
+    font-size: 15px;
+    color: #f5f5f5;
+    letter-spacing: .1px;
+    line-height: 24px;
+}
+
+.features_title {
+    margin-top: 228px;
+    font-family: GothamMedium;
+    font-size: 24.3px;
+    margin-bottom: 31px;
+    margin-left: 228px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    color: #f5f5f5;
+}
+
+/* ---------------------- team screen ---------------------- */
+
+
+.column_block.team {
+    height: 934px;
+}
+
+.column.team {
+    position: relative;
+    z-index: 0;
+}
+
+.column_subtitle.team {
+    margin-top: 278px;
+    margin-left: 13px;
+}
+
+.column_heading.team {
+    height: 282px;
+}
+
+.columns_box.team {
+    margin-top: 100px;
+}
+
+.column_background.team {
+    top: 13px;
+    left: 340px;
+    font-size: 234px;
+    transform: scale(1, 1.05);
+}
+
+.column_title.team {
+    top: 121px;
+    left: 301px;
+}
+
+.team_image {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.name_box {
+    position: absolute;
+    z-index: 100;
+    width: 216px;
+    height: 75px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    top: 365px;
+    left: 30px;
+}
+
+.name_box.second:first-child{
+    margin: 11px;
+}
+
+.column_text.name {
+    font-family: GothamMedium;
+    font-size: 20px;
+    color: #11749e;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+.column_text.profession {
+    margin-top: 1px;
+    font-family: GothamMedium;
+    font-size: 15px;
+}
+
+/* first screen */
+
+.last_screen{
+    font-family: GhotamBook;
+    font-size: 15pt;
+    width: 100%;
+    height: 922px;
+    margin: 0;
+    background-image: url(images/back.png);
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+}
+
+/* text on first screen*/
+
+.text_half{
+    padding: 237px 0 167px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.C{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    opacity: 19%;
+    font-size: 186pt;
+    z-index: 100;
+    position: absolute;
+}
+
+.about_project{
+    font-family: GothamMedium;
+    position: absolute;
+    font-size: 27.8pt;
+    color: white;
+    z-index: 200;
+}
+
+.first_edit_line{
+    margin: 0 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center_edit{
+    margin: auto 30px;
+}
+
+.first_edit_line input{
+    border: 1px solid white;
+    width: 370px;
+    padding: 16px 20px 12px;
+    font-family: GothamMedium;
+    font-size: 11.5pt;
+    color: #ffffff;
+    background: none;
+}
+
+.first_edit_line input.extra{
+    margin: 0 29px;
+}
+
+.edit_input::placeholder{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.second_edit_line{
+    margin: 40px 215px;
+    display: flex;
+}
+
+.second_edit_line input{
+    width: 100%;
+    padding: 16px 22px 114px;
+    font-family: GothamMedium;
+    font-size: 11.5pt;
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
+
+.button-send{
+    margin: 45px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.button-send a{
+    font-size: 16.5pt;
+    text-align: center;
+    width: 227px;
+    padding: 15px 0 24px;
+    background-color: #11749e;
+    color: white;
+    text-decoration: none;
+    font-family: GothamMedium;
+}
+
+.button a:hover{
+    background-color: white;
+    color: #11749e;
+    transition: .15s ease;
+    cursor: pointer;
+}
+
+/* second screen - map*/
+
+.map{
+    margin-top: -70px;
+    width: 100%;
+    height: 332px;
+    background-image: url(images/map.png);
+    background-size: cover;
+    z-index: 200;
+    position: relative;
+}
+
+/* footer */
+
+footer{
+    height: 114px;
+    width: 100%;
+    background-color: #222222;
+    align-items: center;
+    display: flex;
+}
+
+footer span{
+    width: 50%;
+    padding-left: 60px;
+    font-family: Roboto;
+    font-size: 10pt;
+    color: white;
+}
+
+footer div{
+    justify-content: right;
+    padding-right: 100px;
+}
